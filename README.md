@@ -29,7 +29,7 @@
 | title      | string     | null: false                    |
 | content    | string     | null: false                    |
 | start_time | datetime   | null: false                    |
-| close_time | datetime   | null: false                    |
+| end_time   | datetime   | null: false                    |
 | user_id    | references | null: false, foreign_key: true |
 
 ### Association
@@ -45,7 +45,7 @@
 | title      | string     | null: false                    |
 | content    | string     | null: false                    |
 | start_time | datetime   | null: false                    |
-| close_time | datetime   | null: false                    |
+| end_time   | datetime   | null: false                    |
 | user_id    | references | null: false  foreign_key: true |
 | request_id | references | null: false, foreign_key: true |
 
