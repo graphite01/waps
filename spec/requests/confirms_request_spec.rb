@@ -1,5 +1,4 @@
 require 'rails_helper'
 
-RSpec.describe "Confirms", type: :request do
-
+RSpec.describe 'Confirms', type: :request do
 end
