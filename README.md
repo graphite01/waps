@@ -8,8 +8,8 @@
 | email              | string     | null: false, unique: true      |
 | encrypted_password | string     | null: false                    |
 | name               | string     | null: false                    |
-| account_type       | string     | null: false                    |
-| position           | string     | null: false                    |
+| account_type_id    | integer    | null: false                    |
+| position           | string     |                                |
 
 ### emailとencrypted_passwordに関しては、deviseで作成済みになる
 
@@ -19,6 +19,8 @@
 - has_many :confirms
 - has_many :comments
 
+- extend ActiveHash::Associations::ActiveRecordExtensions
+- belongs_to : account_type
 
 ## requests テーブル
 
