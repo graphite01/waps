@@ -19,6 +19,11 @@ class HopesController < ApplicationController
     @hope.update(hope_parameter)
     redirect_to hopes_path
   end
+  def destroy
+    @hope = Hope.find(params[:id])
+    @hope.destroy
+    redirect_to hopes_path
+  end
 
   private
 

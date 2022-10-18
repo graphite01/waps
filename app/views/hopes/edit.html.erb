@@ -18,4 +18,6 @@
 <% end %>
 <h2>シフト希望修正</h2>
 <%= render "shared/form"%>
+<%= link_to "削除する", hope_path(@hope.id), method: :delete, class:"hope-destroy" %>
+
 <%= render "shared/second-footer"%>
