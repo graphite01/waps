@@ -1,6 +1,6 @@
 <%= link_to 'イベント追加', new_hope_path %>
 
-<%= month_calendar hopes: @hopes do |date, hopes| %>
+<%= month_calendar events: @hopes do |date, hopes| %>
   <%= date.day %>
     <% hopes.each do |hope| %>
     <div>
