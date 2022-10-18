@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_17_222924) do
+ActiveRecord::Schema.define(version: 2022_10_18_010700) do
 
-  create_table "requests", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "hopes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
-    t.string "content", null: false
-    t.datetime "start_time", null: false
-    t.datetime "end_time", null: false
+    t.string "content"
+    t.datetime "start_time"
+    t.datetime "end_time"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_requests_on_user_id"
+    t.index ["user_id"], name: "index_hopes_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -38,5 +38,5 @@ ActiveRecord::Schema.define(version: 2022_10_17_222924) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "requests", "users"
+  add_foreign_key "hopes", "users"
 end

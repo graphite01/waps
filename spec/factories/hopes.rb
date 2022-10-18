@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :request do
+  factory :hope do
     
   end
 end

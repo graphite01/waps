@@ -15,21 +15,21 @@
 
 ### Association
 
-- has_many :requests
+- has_many :hopes
 - has_many :confirms
 - has_many :comments
 
 - extend ActiveHash::Associations::ActiveRecordExtensions
 - belongs_to : account_type
 
-## requests テーブル
+## hope テーブル
 
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
 | title      | string     | null: false                    |
-| content    | string     | null: false                    |
-| start_time | datetime   | null: false                    |
-| end_time   | datetime   | null: false                    |
+| content    | string     |                                |
+| start_time | datetime   |                                |
+| end_time   | datetime   |                                |
 | user_id    | references | null: false, foreign_key: true |
 
 ### Association
@@ -43,15 +43,15 @@
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
 | title      | string     | null: false                    |
-| content    | string     | null: false                    |
-| start_time | datetime   | null: false                    |
-| end_time   | datetime   | null: false                    |
+| content    | string     |                                |
+| start_time | datetime   |                                |
+| end_time   | datetime   |                                |
 | user_id    | references | null: false  foreign_key: true |
-| request_id | references | null: false, foreign_key: true |
+| hope_id    | references | null: false, foreign_key: true |
 
 ### Association
 
-- belongs_to :request
+- belongs_to :hope
 - belongs_to :user
 - has_many :comment
 
