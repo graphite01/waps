@@ -11,14 +11,13 @@ class HopesController < ApplicationController
   end
 
   def edit
+    @hopes = Hope.all
     @hope = Hope.find(params[:id])
   end
   def update
-    if @hope.update(hope_params)
-      redirect_to root_path
-    else
-      render :edit
-    end
+    @hope = Hope.find(params[:id])
+    @hope.update(hope_parameter)
+    redirect_to hopes_path
   end
 
   private
