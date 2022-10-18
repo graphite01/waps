@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="04ZRqsbE4-WYHAA8QStU" name="ER図">
-        <mxGraphModel dx="596" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="530" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -107,11 +107,11 @@
         </mxGraphModel>
     </diagram>
     <diagram id="rK96S78wzVSVzZLeyd-q" name="Active Hash">
-        <mxGraphModel dx="596" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="530" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="PdSw7IZ01CfhY0pS9zX5-0"/>
                 <mxCell id="PdSw7IZ01CfhY0pS9zX5-1" parent="PdSw7IZ01CfhY0pS9zX5-0"/>
-                <mxCell id="Ro9YcjFFpDEV7tMNc0ep-0" value="status" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="PdSw7IZ01CfhY0pS9zX5-1" vertex="1">
+                <mxCell id="Ro9YcjFFpDEV7tMNc0ep-0" value="work_status" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="PdSw7IZ01CfhY0pS9zX5-1" vertex="1">
                     <mxGeometry x="160" y="120" width="160" height="146" as="geometry"/>
                 </mxCell>
                 <mxCell id="Ro9YcjFFpDEV7tMNc0ep-1" value="id: 1, name: '---'" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="Ro9YcjFFpDEV7tMNc0ep-0" vertex="1">

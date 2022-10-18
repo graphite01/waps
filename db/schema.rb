@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2022_10_18_010700) do
 
   create_table "hopes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "title", null: false
+    t.integer "work_status_id", null: false
     t.string "content"
     t.datetime "start_time"
     t.datetime "end_time"

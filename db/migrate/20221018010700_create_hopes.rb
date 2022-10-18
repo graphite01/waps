@@ -1,7 +1,7 @@
 class CreateHopes < ActiveRecord::Migration[6.0]
   def change
     create_table :hopes do |t|
-      t.string :title, null: false
+      t.integer :work_status_id, null: false
       t.string :content
       t.datetime :start_time
       t.datetime :end_time

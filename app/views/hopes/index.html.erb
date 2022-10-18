@@ -1,10 +1,18 @@
+<%= render "shared/second-header"%>
+
 <%= link_to 'イベント追加', new_hope_path %>
 
 <%= month_calendar events: @hopes do |date, hopes| %>
   <%= date.day %>
     <% hopes.each do |hope| %>
     <div>
-      <%= hope.title %>
+      <%= hope.work_status.name %>
+      <% if hope.work_status.name == "出勤" %>
+        <%= "#{hope.start_time.hour}時" %>
+        <%= "~ #{hope.end_time.hour}時まで" %>
+      <% end %>
     </div>
   <% end %>
 <% end %>
+
+<%= render "shared/second-footer"%>

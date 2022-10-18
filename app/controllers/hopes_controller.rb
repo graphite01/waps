@@ -14,7 +14,7 @@ class HopesController < ApplicationController
   private
 
   def hope_parameter
-    params.require(:hope).permit(:title, :content, :start_time, :end_time).merge(user_id: current_user.id)
+    params.require(:hope).permit(:work_status_id, :content, :start_time, :end_time).merge(user_id: current_user.id)
   end
 
 end
