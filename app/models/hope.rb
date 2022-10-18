@@ -3,6 +3,7 @@ class Hope < ApplicationRecord
   belongs_to :work_status
   belongs_to :user
 
-  validates :work_status_id, presence: true
-
+  with_options presence: true, numericality: { other_than: 1, message: "cant't be blank" } do
+    validates :work_status_id, presence: true
+  end
 end

@@ -1,14 +1,24 @@
 class HopesController < ApplicationController
   def index
     @hopes = Hope.all
-  end
-  def new
     @hope = Hope.new
   end
+  def new
+  end
   def create
-
     Hope.create(hope_parameter)
-    redirect_to root_path
+    redirect_to hopes_path
+  end
+
+  def edit
+    @hope = Hope.find(params[:id])
+  end
+  def update
+    if @hope.update(hope_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
   end
 
   private

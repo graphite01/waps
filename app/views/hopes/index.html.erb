@@ -1,18 +1,45 @@
 <%= render "shared/second-header"%>
 
-<%= link_to 'イベント追加', new_hope_path %>
 
 <%= month_calendar events: @hopes do |date, hopes| %>
   <%= date.day %>
     <% hopes.each do |hope| %>
     <div>
+      <%= hope.user.name %>
       <%= hope.work_status.name %>
-      <% if hope.work_status.name == "出勤" %>
-        <%= "#{hope.start_time.hour}時" %>
-        <%= "~ #{hope.end_time.hour}時まで" %>
+      <% if hope.work_status.name == "出勤" %><br>
+        <%= "#{hope.start_time.hour}時#{hope.start_time.min}分" %>
+        <%= "~ #{hope.end_time.hour}時#{hope.end_time.min}分" %>
       <% end %>
     </div>
   <% end %>
 <% end %>
+
+<h2>シフト希望入力</h2>
+<%= form_with(model: @hope, local: true) do |form| %>
+
+  <%= form.collection_select(:work_status_id, WorkStatus.all, :id, :name, {}, {class:"work_status", id:"work_status"}) %>
+
+  <div class="content">
+    <%= form.label :"詳細" %>
+    <%= form.text_field :content %>
+  </div>
+  
+  <div class="time">
+    <%= form.label :"出勤時間" %>
+    <%= form.datetime_select :start_time %>
+  </div>
+
+  <div class="time">
+    <%= form.label :"退勤時間" %>
+    <%= form.datetime_select :end_time %>
+  </div>
+
+  <div class="submit">
+    <%= form.submit %>
+  </div>
+
+<% end %>
+
 
 <%= render "shared/second-footer"%>

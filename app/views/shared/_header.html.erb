@@ -1,12 +1,12 @@
 <%# CSS・・・assets/stylesheets/shared/header.css %>
 <header class='top-page-header'>
   <div class='search-bar-contents'>
-    <%= link_to image_tag("waps-logo-color.png", class:"furima-icon"), "/" %>
+    <%= link_to image_tag("waps-logo-color.png", class:"waps-icon"), "/" %>
   </div>
   <div class='nav'>
     <ul class='lists-left'>
-      <li><%= link_to 'シフト希望', hopes_path, class: "category-list" %></li>
-      <li><%= link_to 'シフト作成', edit_hope_path, class: "brand-list" %></li>
+      <li><%= link_to 'シフト希望', hopes_path, class: "hopes-list" %></li>
+      <li><%= link_to 'シフト作成', "edit_hope_path(@hope.id)", method: :get, class: "build-list" %></li>
     </ul>
     <ul class='lists-right'>
       <% if user_signed_in? %>
