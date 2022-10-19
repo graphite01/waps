@@ -1,0 +1,15 @@
+<%= month_calendar events: @hopes do |date, hopes| %>
+  <%= date.day %>
+    <% hopes.each do |hope| %>
+    <div>
+    <%= link_to edit_hope_path(hope), class:"hope-edit" do%>
+      <%= hope.user.name %>
+      <%= hope.work_status.name %>
+      <% if hope.work_status.name == "出勤" %><br>
+        <%= "#{hope.start_time.hour}時#{hope.start_time.min}分" %>
+        <%= "~ #{hope.end_time.hour}時#{hope.end_time.min}分" %>
+      <% end %>
+    <% end %>
+    </div>
+  <% end %>
+<% end %>

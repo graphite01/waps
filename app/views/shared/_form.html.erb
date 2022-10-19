@@ -1,0 +1,26 @@
+<%= form_with model: @hope, url: hopes_path, local: true do |f| %>
+  <%= render 'shared/error_messages', model: f.object %>
+    <div>
+      <%= f.label :"勤務状態"%>
+      <%= f.collection_select(:work_status_id, WorkStatus.all, :id, :name, {}, {class:"work_status", id:"work_status"}) %>
+    </div>
+    <div class="content">
+      <%= f.label :"詳細" %>
+      <%= f.text_field :content %>
+    </div>
+    
+    <div class="time">
+      <%= f.label :"出勤時間" %>
+      <%= f.datetime_select :start_time %>
+    </div>
+
+    <div class="time">
+      <%= f.label :"退勤時間" %>
+      <%= f.datetime_select :end_time %>
+    </div>
+
+    <div class="submit">
+      <%= f.submit %>
+    </div>
+
+<% end %>
