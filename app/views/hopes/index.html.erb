@@ -1,21 +1,4 @@
 <%= render "shared/second-header"%>
-
-
-<%= month_calendar events: @hopes do |date, hopes| %>
-  <%= date.day %>
-    <% hopes.each do |hope| %>
-    <div>
-    <%= link_to edit_hope_path(hope), class:"hope-edit" do%>
-      <%= hope.user.name %>
-      <%= hope.work_status.name %>
-      <% if hope.work_status.name == "出勤" %><br>
-        <%= "#{hope.start_time.hour}時#{hope.start_time.min}分" %>
-        <%= "~ #{hope.end_time.hour}時#{hope.end_time.min}分" %>
-      <% end %>
-    <% end %>
-    </div>
-  <% end %>
-<% end %>
-<h2>シフト希望入力</h2>
-<%= render "shared/form"%>
+<%= link_to "シフト希望入力", new_hope_path, class:"hope-new"%>
+<%= render "shared/calendar"%>
 <%= render "shared/second-footer"%>

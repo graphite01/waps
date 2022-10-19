@@ -1,29 +1,5 @@
 <%= render "shared/second-header"%>
-
-
-<%= form_with(model: @hope, local: true) do |form| %>
-
-  <%= form.collection_select(:work_status_id, WorkStatus.all, :id, :name, {}, {class:"work_status", id:"work_status"}) %>
-
-  <div class="content">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
-  </div>
-  
-  <div class="time">
-    <%= form.label :start_time %>
-    <%= form.datetime_select :start_time %>
-  </div>
-
-  <div class="time">
-    <%= form.label :end_time %>
-    <%= form.datetime_select :end_time %>
-  </div>
-
-  <div class="submit">
-    <%= form.submit %>
-  </div>
-
-<% end %>
-
+<%= render "shared/calendar"%>
+<h2>シフト希望入力</h2>
+<%= render "shared/form"%>
 <%= render "shared/second-footer"%>

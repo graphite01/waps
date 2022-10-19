@@ -1,13 +1,20 @@
 class HopesController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
   def index
+    @hopes = Hope.all
+  end
+  def new
     @hopes = Hope.all
     @hope = Hope.new
   end
-  def new
-  end
   def create
-    Hope.create(hope_parameter)
-    redirect_to hopes_path
+    @hopes = Hope.all
+    @hope = Hope.new
+    if @hope.save
+      redirect_to hopes_path
+    else
+      render :new
+    end
   end
 
   def edit
@@ -16,9 +23,13 @@ class HopesController < ApplicationController
   end
   def update
     @hope = Hope.find(params[:id])
-    @hope.update(hope_parameter)
-    redirect_to hopes_path
+    if @hope.update(hope_parameter)
+      redirect_to hopes_path
+    else
+      render :edit
+    end
   end
+  
   def destroy
     @hope = Hope.find(params[:id])
     @hope.destroy

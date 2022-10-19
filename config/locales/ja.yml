@@ -57,3 +57,13 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
+
+  activerecord:
+      attributes:
+        user:
+          name: 名前
+          account_type_id: アカウント権限
+        hope:
+          user: 下記の必要情報
+          work_status_id: 勤務状態
+          end_time: 退勤時間
