@@ -5,11 +5,11 @@
   </div>
   <div class='nav'>
     <ul class='lists-left'>
-      <li><%= link_to 'シフト希望', hopes_path, class: "hopes-list" %></li>
-      <li><%= link_to 'シフト作成', "edit_hope_path(@hope.id)", method: :get, class: "build-list" %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to 'シフト希望', hopes_path, class: "hopes-list" %></li>
+        <li><%= link_to 'シフト作成', "edit_hope_path(@hope.id)", method: :get, class: "build-list" %></li>
     </ul>
     <ul class='lists-right'>
-      <% if user_signed_in? %>
         <li><%= link_to current_user.name, "#", class: "user-name" %></li>
         <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
       <% else %>

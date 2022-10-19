@@ -19,22 +19,22 @@ RSpec.describe Hope, type: :model do
       it 'work_status_idが空では登録できない' do
         @hope.work_status_id = 1
         @hope.valid?
-        expect(@hope.errors.full_messages).to include("勤務状態を入力してください")
+        expect(@hope.errors.full_messages).to include('勤務状態を入力してください')
       end
       it 'work_status_idが空では登録できない' do
         @hope.work_status_id = 1
         @hope.valid?
-        expect(@hope.errors.full_messages).to include("勤務状態を入力してください")
+        expect(@hope.errors.full_messages).to include('勤務状態を入力してください')
       end
       it 'start_timeが現在の日時より遅い時間では登録できない' do
-        @hope.start_time = "202001010100"
+        @hope.start_time = '202001010100'
         @hope.valid?
-        expect(@hope.errors.full_messages).to include("出勤時間は現在の日時より遅い時間を選択してください")
+        expect(@hope.errors.full_messages).to include('出勤時間は現在の日時より遅い時間を選択してください')
       end
       it 'end_timeがstart_timeより早い時間では登録できない' do
-        @hope.end_time = "209812301530"
+        @hope.end_time = '209812301530'
         @hope.valid?
-        expect(@hope.errors.full_messages).to include("退勤時間は出勤時間より遅い時間を選択してください")
+        expect(@hope.errors.full_messages).to include('退勤時間は出勤時間より遅い時間を選択してください')
       end
     end
   end

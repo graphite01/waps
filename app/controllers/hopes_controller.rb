@@ -1,14 +1,16 @@
 class HopesController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :edit, :destroy]
+  before_action :authenticate_user!, only: [:index, :new, :edit, :destroy]
   before_action :hope_all, only: [:index, :new, :create, :edit]
   before_action :set_hope, only: [:edit, :update, :destroy]
   before_action :user_only_commodity, only: [:edit, :destroy]
 
   def index
   end
+
   def new
     @hope = Hope.new
   end
+
   def create
     start_time = start_time_save
     end_time = end_time_save
@@ -31,13 +33,14 @@ class HopesController < ApplicationController
       render :edit
     end
   end
-  
+
   def destroy
     @hope.destroy
     redirect_to hopes_path
   end
 
   private
+
   def hope_all
     @hopes = Hope.all
   end
@@ -47,11 +50,12 @@ class HopesController < ApplicationController
   end
 
   def start_time_save
-    sdtos = (params[:hope]["start_time(1i)"] + params[:hope]["start_time(2i)"] + params[:hope]["start_time(3i)"] + params[:hope]["start_time(4i)"] + params[:hope]["start_time(5i)"])
+    sdtos = (params[:hope]['start_time(1i)'] + params[:hope]['start_time(2i)'] + params[:hope]['start_time(3i)'] + params[:hope]['start_time(4i)'] + params[:hope]['start_time(5i)'])
     sstoi = sdtos.to_i
   end
+
   def end_time_save
-    edtos = (params[:hope]["end_time(1i)"] + params[:hope]["end_time(2i)"] + params[:hope]["end_time(3i)"] +  params[:hope]["end_time(4i)"] + params[:hope]["end_time(5i)"])
+    edtos = (params[:hope]['end_time(1i)'] + params[:hope]['end_time(2i)'] + params[:hope]['end_time(3i)'] + params[:hope]['end_time(4i)'] + params[:hope]['end_time(5i)'])
     estoi = edtos.to_i
   end
 
@@ -62,5 +66,4 @@ class HopesController < ApplicationController
   def user_only_commodity
     redirect_to action: :index unless @hope.user_id == current_user.id
   end
-
 end
