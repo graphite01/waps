@@ -8,7 +8,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i.freeze
-  validates_format_of :password, with: PASSWORD_REGEX, message: ''
+  validates_format_of :password, with: PASSWORD_REGEX, message: 'は半角英字と数字の両方を含めてください'
 
   with_options presence: true, format: { with: /\A[ぁ-んァ-ヶ一-龥々ー ]+\z/, message: 'は英字と数字の両方を含めてください' } do
     validates :name
