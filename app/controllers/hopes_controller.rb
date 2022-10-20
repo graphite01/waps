@@ -32,7 +32,7 @@ class HopesController < ApplicationController
     end_time = end_time_save
     if @hope.update(hope_params)
       @confirm_date = Confirm.find(params[:id])
-      @confirm_date = Confirm.update(params.require(:hope).permit(:work_status_id, :content, :start_time, :end_time).merge(user_id: current_user.id, hope_id: @hope.id))
+      @confirm_date.update(params.require(:hope).permit(:work_status_id, :content, :start_time, :end_time).merge(user_id: current_user.id, hope_id: @hope.id))
       redirect_to hopes_path
     else
       render :edit
