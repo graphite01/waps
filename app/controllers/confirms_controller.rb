@@ -23,7 +23,7 @@ class ConfirmsController < ApplicationController
   end
 
   def edit
-    @confirm = Confirm.find(params[:id])
+    binding.pry
   end
 
   def update
@@ -53,7 +53,7 @@ class ConfirmsController < ApplicationController
   end
 
   def confirm_params
-    params.require(:confirm).permit(:work_status_id, :content, :start_time, :end_time).merge(user_id: user.id)
+    params.require(:confirm).permit(:work_status_id, :content, :start_time, :end_time).merge(user_id: user.id, hope_id: params[:hope_id])
   end
 
   def start_time_save
