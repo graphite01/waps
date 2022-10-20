@@ -17,6 +17,8 @@ class HopesController < ApplicationController
     @hopes = Hope.all
     @hope = Hope.new(hope_params)
     if @hope.save
+      @confirm_date = Confirm.new(params.require(:hope).permit(:work_status_id, :content, :start_time, :end_time).merge(user_id: current_user.id, hope_id: @hope.id))
+      @confirm_date.save
       redirect_to hopes_path
     else
       render :new
