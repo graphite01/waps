@@ -8,10 +8,11 @@ class ConfirmsController < ApplicationController
 
   def new
     @hopes = Hope.all
-    @hope = Hope.new
+    @confirm = Confirm.new
   end
 
   def create
+    @hopes = Hope.all
     start_time = start_time_save
     end_time = end_time_save
     @confirm = Confirm.new(confirm_params)
@@ -23,7 +24,6 @@ class ConfirmsController < ApplicationController
   end
 
   def edit
-    binding.pry
   end
 
   def update
@@ -53,7 +53,7 @@ class ConfirmsController < ApplicationController
   end
 
   def confirm_params
-    params.require(:confirm).permit(:work_status_id, :content, :start_time, :end_time).merge(user_id: user.id, hope_id: params[:hope_id])
+    params.require(:confirm).permit(:user_id, :work_status_id, :content, :start_time, :end_time).merge(hope_id: params[:hope_id])
   end
 
   def start_time_save
