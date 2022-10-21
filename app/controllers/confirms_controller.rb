@@ -1,4 +1,5 @@
 class ConfirmsController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
   before_action :manager_only, except: [:index]
   before_action :confirm_all, only: [:index, :new, :create, :edit, :update]
   before_action :set_confirm, only: [:edit, :update, :destroy]
