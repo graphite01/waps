@@ -1,6 +1,6 @@
 class HopesController < ApplicationController
   before_action :authenticate_user!, only: [:index, :new, :edit, :destroy]
-  before_action :hope_all, only: [:index, :new, :create, :edit]
+  before_action :hope_all, only: [:index, :new, :create, :edit, :update]
   before_action :set_hope, only: [:edit, :update, :destroy]
   before_action :user_only_commodity, only: [:edit, :destroy]
 
@@ -14,9 +14,12 @@ class HopesController < ApplicationController
   def create
     start_time = start_time_save
     end_time = end_time_save
-    @hopes = Hope.all
     @hope = Hope.new(hope_params)
     if @hope.save
+      @confirm_date = Confirm.new(params.require(:hope).permit(:work_status_id, :content, :start_time, :end_time).merge(
+                                    user_id: current_user.id, hope_id: @hope.id
+                                  ))
+      @confirm_date.save
       redirect_to hopes_path
     else
       render :new
@@ -27,7 +30,13 @@ class HopesController < ApplicationController
   end
 
   def update
+    start_time = start_time_save
+    end_time = end_time_save
     if @hope.update(hope_params)
+      @confirm_date = Confirm.find(params[:id])
+      @confirm_date.update(params.require(:hope).permit(:work_status_id, :content, :start_time, :end_time).merge(
+                             user_id: current_user.id, hope_id: @hope.id
+                           ))
       redirect_to hopes_path
     else
       render :edit

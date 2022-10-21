@@ -61,7 +61,21 @@
     </ul>
   </div>
   <%# /FURIMAが選ばれる3つの理由部分 %>
-
+  <% if user_signed_in? %>
+    <%= month_calendar events: @confirms do |date, confirms| %>
+      <%= date.day %>
+        <% confirms.each do |confirm| %>
+        <div>
+          <%= confirm.user.name %>
+          <%= confirm.work_status.name %>
+          <% if confirm.work_status.name == "出勤" %><br>
+            <%= "#{confirm.start_time.hour}時#{confirm.start_time.min}分" %>
+            <%= "~ #{confirm.end_time.hour}時#{confirm.end_time.min}分" %>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
   <%# 画面中央の「会員数日本一位」帯部分 %>
   <div class='ad-contents'>
     <h2 class='ad-title'>
