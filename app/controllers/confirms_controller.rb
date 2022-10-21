@@ -1,6 +1,6 @@
 class ConfirmsController < ApplicationController
   before_action :manager_only, except: [:index]
-  before_action :confirm_all, only: [:index, :new, :create, :edit]
+  before_action :confirm_all, only: [:index, :new, :create, :edit, :update]
   before_action :set_confirm, only: [:edit, :update, :destroy]
 
   def index
@@ -24,6 +24,8 @@ class ConfirmsController < ApplicationController
   end
 
   def edit
+    @hopes = Hope.all
+    @hope = Hope.new
   end
 
   def update
