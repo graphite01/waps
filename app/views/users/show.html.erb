@@ -1,0 +1,46 @@
+<%= render "shared/second-header"%>
+
+<%= month_calendar events: @confirm do |date, confirm| %>
+  <%= date.day %>
+    <% confirm.each do |confirm| %>
+    <div>
+    <%= link_to edit_confirm_path(confirm), class:"hope-edit" do%>
+      <%= confirm.user.name %>
+      <%= confirm.work_status.name %>
+      <% if confirm.work_status.name == "出勤" %><br>
+        <%= "#{confirm.start_time.hour}時#{confirm.start_time.min}分" %>
+        <%= "~ #{confirm.end_time.hour}時#{confirm.end_time.min}分" %>
+      <% end %>
+    <% end %>
+    </div>
+  <% end %>
+<% end %>
+
+<div class="main">
+  <div class="inner">
+    <div class="user__wrapper">
+      <h2 class="page-heading">
+        <%= "#{@user.name}さんの情報"%>
+      </h2>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th class="table__col1">名前</th>
+            <td class="table__col2"><%= @user.name %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">email</th>
+            <td class="table__col2"><%= @user.email %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">役職</th>
+            <td class="table__col2"><%= @user.position %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">アカウント権限</th>
+            <td class="table__col2"><%= @user.account_type.name %></td>
+          </tr>
+        </tbody>
+      </table>
+
+<%= render "shared/second-footer"%>
