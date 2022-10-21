@@ -42,7 +42,6 @@ class ConfirmsController < ApplicationController
     redirect_to new_confirm_path
   end
 
-
   private
 
   def confirm_all
@@ -50,9 +49,7 @@ class ConfirmsController < ApplicationController
   end
 
   def manager_only
-    if current_user.account_type_id != 3
-      redirect_to root_path
-    end
+    redirect_to root_path if current_user.account_type_id != 3
   end
 
   def confirm_params
