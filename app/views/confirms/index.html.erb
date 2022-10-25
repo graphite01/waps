@@ -58,7 +58,7 @@
   <%= month_calendar events: @confirms do |date, confirms| %>
     <%= date.day %>
       <% confirms.each do |confirm| %>
-      <div>
+      <div class="confirms-index-date">
         <%= confirm.user.name %>
         <%= confirm.work_status.name %>
         <% if confirm.work_status.name == "出勤" %><br>

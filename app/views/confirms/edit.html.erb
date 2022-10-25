@@ -1,7 +1,7 @@
 <%= render "shared/second-header"%>
-<h2>シフト希望</h2>
+<div class = shiftname> シフト希望 </div>
 <%= render "shared/siftcalendar"%>
-<h2>シフト作成</h2>
+<div class = shiftname> シフト作成 </div>
 <%= render "shared/create_siftcalendar"%>
 <%= render "shared/create_form"%>
 <%= button_to "削除する", confirm_path(@confirm.id), method: :delete, class:"hope-destroy" %>

@@ -1,13 +1,19 @@
 <%= month_calendar events: @hopes do |date, hopes| %>
   <%= date.day %>
     <% hopes.each do |hope| %>
-    <div>
-    <%= link_to edit_hope_path(hope), class:"hope-edit" do%>
+    <div class="hope-edit">
+    <%= link_to edit_hope_path(hope) do%>
       <%= hope.user.name %>
       <%= hope.work_status.name %>
       <% if hope.work_status.name == "出勤" %><br>
-        <%= "#{hope.start_time.hour}時#{hope.start_time.min}分" %>
-        <%= "~ #{hope.end_time.hour}時#{hope.end_time.min}分" %>
+        <%= "#{hope.start_time.hour}時" %>
+        <% if hope.start_time.min != 00 %>
+          <%= "#{hope.start_time.min}分" %>
+        <% end %>
+        <%= "~ #{hope.end_time.hour}時" %>
+        <% if hope.start_time.min != 00 %>
+          <%= "#{hope.end_time.min}分" %>
+        <% end %>
       <% end %>
     <% end %>
     </div>

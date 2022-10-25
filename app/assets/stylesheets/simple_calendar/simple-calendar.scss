@@ -1,0 +1,139 @@
+.simple-calendar {
+  table {
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(221, 221, 221);
+    border-collapse: collapse;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  tr {
+    border-collapse: collapse;
+  }
+
+  th {
+    padding: 6px;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    border-collapse: collapse;
+    border-left: 1px solid rgb(221, 221, 221);
+    border-right: 1px solid rgb(221, 221, 221);
+    border-top: 0px none rgb(51, 51, 51);
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  td {
+    padding: 6px;
+    vertical-align: top;
+    width: 14%;
+
+    border: 1px solid #ddd;
+    border-top-color: rgb(221, 221, 221);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(221, 221, 221);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(221, 221, 221);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(221, 221, 221);
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
+
+  .day {
+    height: 80px;
+  }
+
+  .wday-0 {
+    color: red;
+  }
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {
+    color: blue;
+  }
+
+  .today {
+    background: #FFFFC0
+  }
+
+  .past {}
+
+  .past a {
+    color: silver;
+  }
+
+  .future {}
+
+  .start-date {}
+
+  .prev-month {
+    background: whitesmoke;
+  }
+  .next-month {
+    background: whitesmoke;
+  }
+  .current-month {}
+
+  .has-events {}
+
+  .hope-edit {
+    margin-bottom: 15px;
+  }
+
+  .hope-edit a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .calendar-heading {
+    background-color: lightblue;
+  }
+
+  .calendar-heading a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 1px;
+    background-color: ghostwhite;
+    text-align: center;
+  }
+
+  .calendar-title {
+    font-size: 30px;
+    font-weight: bolder;
+    color: whitesmoke;
+  }
+
+  .next-monthpage {
+    margin-right: 5px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 5%;
+    display: block;
+  }
+
+  .previous-monthpage {
+    margin-right: auto;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 5%;
+    display: block;
+  }
+
+  .calendar-title-head {
+    display: flex;
+  }
+}
