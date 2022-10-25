@@ -3,13 +3,19 @@
 <%= month_calendar events: @confirm do |date, confirm| %>
   <%= date.day %>
     <% confirm.each do |confirm| %>
-    <div>
-    <%= link_to edit_confirm_path(confirm), class:"hope-edit" do%>
+    <div class="hope-edit">
+    <%= link_to edit_confirm_path(confirm) do%>
       <%= confirm.user.name %>
       <%= confirm.work_status.name %>
       <% if confirm.work_status.name == "出勤" %><br>
-        <%= "#{confirm.start_time.hour}時#{confirm.start_time.min}分" %>
-        <%= "~ #{confirm.end_time.hour}時#{confirm.end_time.min}分" %>
+        <%= "#{confirm.start_time.hour}時" %>
+        <% if confirm.start_time.min != 00 %>
+          <%= "#{confirm.start_time.min}分" %>
+        <% end %>
+        <%= "~ #{confirm.end_time.hour}時" %>
+        <% if confirm.start_time.min != 00 %>
+          <%= "#{confirm.end_time.min}分" %>
+        <% end %>
       <% end %>
     <% end %>
     <%#<div class="json-date hidden", id="json-dates"><% datejson = confirm.to_json %></div>
