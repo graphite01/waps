@@ -12,7 +12,7 @@
         <%= "~ #{confirm.end_time.hour}時#{confirm.end_time.min}分" %>
       <% end %>
     <% end %>
-    <div class="json-date hidden", id="json-dates"><% datejson = confirm.to_json %></div>
+    <%#<div class="json-date hidden", id="json-dates"><% datejson = confirm.to_json %></div>
     </div>
   <% end %>
 <% end %>
@@ -43,6 +43,6 @@
           </tr>
         </tbody>
       </table>
-      <%= button_to "Googleカレンダーに同期する", 'https://docs.google.com/spreadsheets/d/10TEPIiWP3zFihJJqcqajY3FYnHKyW8G-otoTNh_8OOw/edit#gid=0', {method: "POST", id: "g-button" } %>
+      <%#= button_to "Googleカレンダーに同期する", 'https://docs.google.com/spreadsheets/d/10TEPIiWP3zFihJJqcqajY3FYnHKyW8G-otoTNh_8OOw/edit#gid=0', {method: "POST", id: "g-button" } %>
 
 <%= render "shared/second-footer"%>
