@@ -3,26 +3,33 @@
 <%= month_calendar events: @confirm do |date, confirm| %>
   <%= date.day %>
     <% confirm.each do |confirm| %>
-    <div>
-    <%= link_to edit_confirm_path(confirm), class:"hope-edit" do%>
+    <div class="hope-edit">
+    <%= link_to edit_confirm_path(confirm) do%>
       <%= confirm.user.name %>
       <%= confirm.work_status.name %>
       <% if confirm.work_status.name == "出勤" %><br>
-        <%= "#{confirm.start_time.hour}時#{confirm.start_time.min}分" %>
-        <%= "~ #{confirm.end_time.hour}時#{confirm.end_time.min}分" %>
+        <%= "#{confirm.start_time.hour}時" %>
+        <% if confirm.start_time.min != 00 %>
+          <%= "#{confirm.start_time.min}分" %>
+        <% end %>
+        <%= "~ #{confirm.end_time.hour}時" %>
+        <% if confirm.start_time.min != 00 %>
+          <%= "#{confirm.end_time.min}分" %>
+        <% end %>
       <% end %>
     <% end %>
+    <%#<div class="json-date hidden", id="json-dates"><% datejson = confirm.to_json %></div>
     </div>
   <% end %>
 <% end %>
 
-<div class="main">
-  <div class="inner">
+<div class="user-main">
+  <div class="user-inner">
     <div class="user__wrapper">
-      <h2 class="page-heading">
+      <h2 class="user-page-heading">
         <%= "#{@user.name}さんの情報"%>
       </h2>
-      <table class="table">
+      <table class="user-table">
         <tbody>
           <tr>
             <th class="table__col1">名前</th>
@@ -42,5 +49,8 @@
           </tr>
         </tbody>
       </table>
-
+      <%#= button_to "Googleカレンダーに同期する", 'https://docs.google.com/spreadsheets/d/10TEPIiWP3zFihJJqcqajY3FYnHKyW8G-otoTNh_8OOw/edit#gid=0', {method: "POST", id: "g-button" } %>
+    </div>
+  </div>
+</div>
 <%= render "shared/second-footer"%>

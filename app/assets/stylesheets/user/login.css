@@ -18,3 +18,14 @@
   text-align: center;
   color: red;
 }
+
+.form-header-text {
+  font-size: 30px;
+}
+
+.form-wraps {
+  height: calc(100vh - 200px);
+  width: 50%;
+  background-color: white;
+  padding-bottom: 70px;
+}
