@@ -1,14 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 .second-header {
-  width: 100%;
-  min-width: 800px;
-  height: 130px;
-  background-color: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100vw;
+  padding: 2vh 15vw;
+
+  background-color: lightblue;
 }
 
 .second-logo {
-  width: 185px;
-  height: 49px;
+  width: 10vw;
 }
