@@ -1,7 +1,8 @@
 <%= render "shared/second-header"%>
 <%= render "shared/siftcalendar"%>
 <div class = shift-hopename> シフト希望修正 </div>
-<%= render "shared/edit_form"%>
-<%= button_to "削除する", hope_path(@hope.id), method: :delete, class:"hope-destroy" %>
-
+<div class = form-hope-main>
+  <%= render "shared/edit_form"%>
+  <%= button_to "削除する", hope_path(@hope.id), method: :delete, class:"hope-destroy" %>
+</div>
 <%= render "shared/second-footer"%>

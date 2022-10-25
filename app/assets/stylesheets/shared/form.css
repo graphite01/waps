@@ -1,0 +1,32 @@
+.form-hope-main {
+  background-color: lightblue;
+  padding-bottom: 10px;
+}
+
+.form-work-status {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.work_status {
+  padding: 5px 61px;
+}
+
+.form-content-hope {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.form-time-hope {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.form-submit-hope {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
