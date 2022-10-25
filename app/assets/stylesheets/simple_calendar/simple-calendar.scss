@@ -67,10 +67,6 @@
 
   .past {}
 
-  .past a {
-    color: silver;
-  }
-
   .future {}
 
   .start-date {}
@@ -88,16 +84,16 @@
   .hope-edit {
     margin-bottom: 15px;
   }
-
+  
   .hope-edit a{
     text-decoration: none;
     color: black;
   }
-
+  
   .calendar-heading {
     background-color: lightblue;
   }
-
+  
   .calendar-heading a {
     text-decoration: none;
     color: black;
@@ -108,7 +104,7 @@
     background-color: ghostwhite;
     text-align: center;
   }
-
+  
   .calendar-title {
     font-size: 30px;
     font-weight: bolder;
@@ -123,7 +119,7 @@
     width: 5%;
     display: block;
   }
-
+  
   .previous-monthpage {
     margin-right: auto;
     margin-left: 5px;
@@ -132,8 +128,12 @@
     width: 5%;
     display: block;
   }
-
+  
   .calendar-title-head {
     display: flex;
+  }
+
+  .past a {
+    color: silver;
   }
 }
