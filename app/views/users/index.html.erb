@@ -1,0 +1,21 @@
+<%= render "shared/second-header"%>
+<div class= index-user-dates-title>社員一覧</div>
+<div class= index-user-dates>
+  <table border="2" width="100%" class="table users-index">
+    <tr class= date-column-tables>
+      <th width="25%" class= users-date-name-th>名前</th>
+      <th width="25%" class= users-date-email-th>メールアドレス</th>
+      <th width="25%" class= users-date-position-th>役職</th>
+      <th width="25%" class= users-date-account-tipe-th>アカウント権限</th>
+    </tr>
+    <% @users.each do |user| %>
+    <tr align="center" class="users-date-tables">
+      <td width="25%" class="users-date-name-table"><%= user.name %></td>
+      <td width="25%" class="users-date-email-table"><%= user.email %></td>
+      <td width="25%" class="users-date-position-table"><%= user.position %></td>
+      <td width="25%" class="users-date-account-tipe-table"><%= user.account_type.name %></td>
+    </tr>
+    <% end %>
+  </table>
+</div>
+<%= render "shared/second-footer"%>

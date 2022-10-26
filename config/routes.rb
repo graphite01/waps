@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   root to: 'confirms#index'
   resources :hopes
   resources :confirms
-  resources :users, only: :show
+  resources :users, only: [:index, :show, :edit, :update, :destroy]
 end
