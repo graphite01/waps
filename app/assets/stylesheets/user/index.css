@@ -1,0 +1,42 @@
+.index-user-dates-title {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.index-user-dates {
+  width: 100vw;
+  height: calc(100vh - 250px);
+  padding: 20px 80px;
+}
+
+.date-column-tables {
+  display: flex;
+  font-size: 20px;
+}
+
+.users-date-tables {
+  display: flex;
+  font-size: 20px;
+}
+
+.users-date-name-th {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.users-date-email-th {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.users-date-position-th {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.users-date-account-tipe-th {
+  text-align: center;
+  font-weight: bolder;
+}

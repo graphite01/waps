@@ -7,10 +7,13 @@
     <ul class='lists-left'>
       <% if user_signed_in? %>
         <li><%= link_to 'シフト希望', hopes_path, class: "hopes-list" %></li>
-        <li><%= link_to 'シフト作成', new_confirm_path, method: :get, class: "build-list" %></li>
+        <% if current_user.account_type.name == "管理者" %>
+          <li><%= link_to 'シフト作成', new_confirm_path, method: :get, class: "build-list" %></li>
+        <% end %>
     </ul>
     <ul class='lists-right'>
         <li><%= link_to current_user.name, user_path(current_user.id), class: "user-name" %></li>
+        <li><%= link_to "社員一覧", users_path, class: "user-name" %></li>
         <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
       <% else %>
         <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
