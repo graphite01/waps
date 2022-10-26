@@ -3,6 +3,7 @@ class Confirm < ApplicationRecord
   belongs_to :work_status
   belongs_to :user
   belongs_to :hope, optional: true
+  has_many :comments
 
   with_options numericality: { other_than: 1, message: 'を入力してください' } do
     validates :work_status_id

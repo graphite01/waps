@@ -3,6 +3,7 @@ class User < ApplicationRecord
   belongs_to :account_type
   has_many :hopes
   has_many :confirms
+  has_many :comments
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
