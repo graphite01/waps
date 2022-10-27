@@ -56,9 +56,9 @@
 <%# シフト表示部分 %>
 <% if user_signed_in? %>
   <%= render "shared/create_siftcalendar"%>
+  <%= render "shared/comment_forms" %>
 <% end %>
   <%# /シフト表示部分 %>
-<%= render "shared/comment_forms" %>
 <% unless user_signed_in? %>
   <%= render "shared/footer" %>
 <% else %>

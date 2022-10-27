@@ -1,29 +1,29 @@
-<%= form_with model: @confirm, local: true do |f| %>
+<%= form_with model: @confirm, class:"create-form-table-date", local: true do |f| %>
   <%= render 'shared/error_messages', model: f.object %>
-    <div>
+    <div class="create-form-username">
       <%= f.label :"従業員名"%>
       <%= f.collection_select(:user_id, User.all, :id, :name, :include_blank => true) %>
     </div>
-    <div>
+    <div class="create-form-works-status">
       <%= f.label :"勤務状態"%>
       <%= f.collection_select(:work_status_id, WorkStatus.all, :id, :name, {}, {class:"work_status", id:"work_status"}) %>
     </div>
-    <div class="content">
+    <div class="create-form-content">
       <%= f.label :"詳細" %>
       <%= f.text_field :content %>
     </div>
     
-    <div class="time">
+    <div class="create-form-time">
       <%= f.label :"出勤時間" %>
       <%= f.datetime_select :start_time %>
     </div>
 
-    <div class="time">
+    <div class="create-form-time">
       <%= f.label :"退勤時間" %>
       <%= f.datetime_select :end_time %>
     </div>
 
-    <div class="submit">
+    <div class="create-form-submit">
       <%= f.submit %>
     </div>
 
