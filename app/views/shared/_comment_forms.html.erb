@@ -1,16 +1,17 @@
 <div class="comments">
-  <h4>＜コメント一覧＞</h4>
-  <% @comments.each do |comment| %>
-    <p>
-      <%= comment.user.name %>
-      <%= comment.content %>
-      <%= "#{comment.created_at.month}""月""#{comment.created_at.day}""日""#{comment.created_at.hour}"":""#{comment.created_at.min}"%>
-    </p>
-  <% end %>
-</div>
-<%= form_with model: @comment, local: true do |f| %>
-  <div class="form-input">
-    <%= f.text_field :content, class: 'form-comment', placeholder: 'コメントする' %>
+  <div class="comments-title">コメント一覧</div>
+    <div class="comment-date-table">
+      <% @comments.each do |comment| %>
+        <div class="comment-date-times"><%= "#{comment.created_at.month}""月""#{comment.created_at.day}""日""#{comment.created_at.hour}"":""#{comment.created_at.min}"%></div>
+        <div class="comment-contents"><%= comment.content %></div>
+        <div class="comment-user-name"><%= comment.user.name %></div>
+        <% end %>
+    </div>
+  
+  <div class="comment-form-table">
+    <%= form_with model: @comment, local: true do |f| %>
+      <%= f.text_field :content, class: 'form-comment', placeholder: '  コメントする' %>
+      <%= f.submit '送信', class: 'form-comment-submit' %>
+    <% end %>
   </div>
-  <%= f.submit '送信', class: 'form-submit' %>
-<% end %>
+</div>

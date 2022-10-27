@@ -5,7 +5,7 @@ class ConfirmsController < ApplicationController
   before_action :set_confirm, only: [:edit, :update, :destroy]
 
   def index
-    @comments = Comment.includes(:user).last(10)
+    @comments = Comment.includes(:user).order(id: :DESC)
     @comment = Comment.new
   end
 
