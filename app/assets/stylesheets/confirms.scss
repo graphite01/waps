@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* 画面上部の「分かりやすいシフト管理アプリ」帯部分 */
+* {
+  box-sizing: border-box;
+}
+
 .title-contents {
   width: 100vw;
   background-image: image-url('furima-header01.png');
