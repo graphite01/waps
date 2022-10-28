@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* 画面上部の「分かりやすいシフト管理アプリ」帯部分 */
+* {
+  box-sizing: border-box;
+}
+
 .title-contents {
   width: 100vw;
   background-image: image-url('furima-header01.png');
@@ -79,9 +83,25 @@
 }
 
 .shiftname {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   background-color: lightblue;
   color: whitesmoke;
   text-align: center;
+}
+
+.shift-confirms-main-edit {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: lightblue;
+  color: whitesmoke;
+  padding-top: 15px;
+}
+
+.confirm-destroy {
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -10px;
 }

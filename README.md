@@ -108,7 +108,7 @@ https://waps-38514.herokuapp.com/
 
 - belongs_to :hope
 - belongs_to :user
-- has_many :comment
+- has_many :comments
 
 - extend ActiveHash::Associations::ActiveRecordExtensions
 - belongs_to : work_status

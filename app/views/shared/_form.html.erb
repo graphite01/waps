@@ -11,12 +11,12 @@
     
     <div class="form-time-hope">
       <%= f.label :"出勤時間" %>
-      <%= f.datetime_select :start_time %>
+      <%= f.datetime_select :start_time, minute_step: 5 %>
     </div>
 
     <div class="form-time-hope">
       <%= f.label :"退勤時間" %>
-      <%= f.datetime_select :end_time %>
+      <%= f.datetime_select :end_time, minute_step: 5 %>
     </div>
 
     <div class="form-submit-hope">

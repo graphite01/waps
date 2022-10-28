@@ -2,12 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .shift-hopename {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bold;
   text-align: center;
   background-color: lightblue;
-  color: whitesmoke
+  color: whitesmoke;
+  padding-top: 15px;
 }
 
 .hope-new {
   font-size: 25px;
+}
+
+.hope-destroy {
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
 }

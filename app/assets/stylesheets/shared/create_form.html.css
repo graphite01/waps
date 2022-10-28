@@ -1,0 +1,43 @@
+.create-form-table-date {
+  background-color: lightblue;
+}
+
+.create-form-username {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 60px 0;
+  margin-bottom: 20px;
+}
+
+.create_username {
+  padding: 5px 61px;
+}
+
+.create-form-works-status {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.work_status {
+  padding: 5px 61px;
+}
+
+.create-form-content {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.create-form-time {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.create-form-submit {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
