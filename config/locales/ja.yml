@@ -73,3 +73,6 @@ ja:
           work_status_id: 勤務状態
           start_time: 出勤時間
           end_time: 退勤時間
+        comment:
+          user: 従業員名
+          content: コメント
