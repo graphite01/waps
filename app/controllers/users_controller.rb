@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   def update
     if current_user.update(user_params)
       redirect_to user_path(current_user.id)
-      sign_in(current_user, :bypass => true) 
+      sign_in(current_user, bypass: true)
     else
       render :edit
     end
@@ -24,8 +24,8 @@ class UsersController < ApplicationController
   end
 
   private
+
   def user_params
     params.require(:user).permit(:name, :email, :position, :account_type_id, :password)
   end
-
 end
