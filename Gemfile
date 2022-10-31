@@ -65,3 +65,6 @@ gem 'rails-i18n'
 gem 'google-apis-calendar_v3'
 gem 'google-api-ruby-client'
 gem 'googleauth'
+gem 'omniauth-google-oauth2'
+gem "omniauth-rails_csrf_protection"
+gem 'omniauth', '~>1.9.1'

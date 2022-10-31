@@ -25,6 +25,10 @@
     </div>
     <%= f.password_field :password, class:"input-default", id:"password", placeholder:"" %>
   </div>
+  <div class="google-session-link">
+    <%= image_tag "btn_google_signin_dark_normal_web.png", class:"google-signin-icon-image" %>
+    <%= link_to "Googleアカウントでログイン", user_google_oauth2_omniauth_authorize_path, method: :post%>
+  </div>
   <div class='login-btn'>
     <%= f.submit "ログイン" ,class:"login-red-btn" %>
   </div>

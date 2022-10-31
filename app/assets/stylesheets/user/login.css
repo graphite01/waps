@@ -29,3 +29,21 @@
   background-color: white;
   padding-bottom: 70px;
 }
+
+.google-session-link {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-signin-icon-image{
+  margin-right: 35px;
+}
+
+.google-session-link a{
+  text-decoration: none;
+  color: black;
+}

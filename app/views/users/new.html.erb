@@ -1,0 +1,12 @@
+<%= render "shared/second-header"%>
+<div class="new-registration-board">
+  <div class="new-user-registration-title">登録方法</div>
+  <div class="mail-registration-link">
+    <%= image_tag "e-mail-icon.png", class:"e-mail-icon-image" %>
+    <%= link_to "メールアドレスで登録", new_user_registration_path%>
+  </div>
+  <div class="google-registration-link">
+    <%= image_tag "google-icon.png", class:"google-icon-image" %>
+    <%= link_to "Googleアカウントで登録", user_google_oauth2_omniauth_authorize_path, method: :post%>
+  </div>
+<%= render "shared/second-footer"%>
