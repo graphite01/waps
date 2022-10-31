@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+.main {
+  background-color: aliceblue;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
 .title-contents {
   width: 100vw;
   background-image: image-url('furima-header01.png');

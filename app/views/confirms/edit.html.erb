@@ -1,9 +1,11 @@
 <%= render "shared/second-header"%>
-<div class = shiftname> シフト希望 </div>
-<%= render "shared/siftcalendar"%>
-<div class = shiftname> シフト作成 </div>
-<%= render "shared/create_siftcalendar"%>
-<div class = shift-confirms-main-edit>シフト作成 内容修正</div>
-<%= render "shared/create_form"%>
-<div class = "confirm-destroy-tables"><%= button_to "削除する", confirm_path(@confirm.id), method: :delete, class:"confirm-destroy" %></div>
+<div class='main'>
+  <div class = shiftname> シフト希望 </div>
+  <%= render "shared/siftcalendar"%>
+  <div class = shiftname> シフト作成 </div>
+  <%= render "shared/create_siftcalendar"%>
+  <div class = shift-confirms-main-edit>シフト作成 内容修正</div>
+  <%= render "shared/create_form"%>
+  <div class = "confirm-destroy-tables"><%= button_to "削除する", confirm_path(@confirm.id), method: :delete, class:"confirm-destroy" %></div>
+</div>
 <%= render "shared/second-footer"%>

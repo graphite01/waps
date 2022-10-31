@@ -1,6 +1,8 @@
 <%= render "shared/second-header"%>
-<div class="shift-hopename">
-  <%= button_to "シフト希望入力", new_hope_path, method: :get, class:"hope-new"%>
+<div class='main'>
+  <div class="shift-hopename">
+    <%= button_to "シフト希望入力", new_hope_path, method: :get, class:"hope-new"%>
+  </div>
+  <%= render "shared/siftcalendar"%>
 </div>
-<%= render "shared/siftcalendar"%>
 <%= render "shared/second-footer"%>

@@ -7,11 +7,13 @@
     border-collapse: collapse;
     box-sizing: border-box;
     max-width: 100%;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
 
   tr {
     border-collapse: collapse;
+    background-color: white;
   }
 
   th {
@@ -47,7 +49,7 @@
   }
 
   .day {
-    height: 80px;
+    height: 120px;
   }
 
   .wday-0 {
@@ -113,7 +115,7 @@
   }
 
   .next-monthpage {
-    margin-right: 5px;
+    margin-right: 220px;
     margin-left: auto;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -123,7 +125,7 @@
   
   .previous-monthpage {
     margin-right: auto;
-    margin-left: 5px;
+    margin-left: 220px;
     margin-bottom: 10px;
     margin-top: 5px;
     width: 5%;
