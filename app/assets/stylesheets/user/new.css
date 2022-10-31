@@ -4,53 +4,67 @@
 }
 
 .new-user-registration-title {
-  margin-top: 100px;
+  margin-top: 200px;
   text-align: center;
   font-size: 50px;
   font-weight: bolder;
 }
 
 .mail-registration-link {
-  margin-top: 100px;
-  display: flex;
+  margin-bottom: 50px;
+  margin-top: 200px;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .e-mail-icon-image {
-  width: 150px;
-  height: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  width: 600px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.mail-registration-link a{
+.e-mail-icon-image img {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.email-registration-titles {
   text-decoration: none;
   color: black;
-  font-size: 40px;
+  font-size: 30px;
   margin-left: 100px;
   padding-right: 50px;
 }
 
 .google-registration-link {
+  margin-bottom: 50px;
+  margin-top: 100px;
+  justify-content: center;
   text-align: center;
   margin-bottom: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .google-icon-image {
-  width: 220px;
+  width: 600px;
   height: 80px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.google-registration-link a{
+.google-icon-image img {
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
+}
+
+.google-registration-titles {
   text-decoration: none;
   color: black;
-  font-size: 40px;
-  margin-left:10px;
+  font-size: 30px;
+  margin-left: 100px;
+  padding-right: 50px;
 }
