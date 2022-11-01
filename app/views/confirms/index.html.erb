@@ -1,7 +1,6 @@
 <%= render "shared/header" %>
 <div class='main'>
 
-
 <%# 画面上部の「分かりやすい、シフト管理アプリ」帯部分 %>
   <% unless user_signed_in? %>
     <div class='title-contents'>
@@ -27,27 +26,24 @@
         Wapsが選ばれる理由
       </h2>
       <ul class='reason-lists'>
-        <li class='list'>
-          <%= image_tag "job_roudousya_young.png", class:"list-pict" %>
-          <span class='reason-list-number'></span>
-          <h3 class='reason-list-text'>
-            <span class='reason-list-blue-text'>誰でもシフト希望を見ながら</span>
+        <li class='list1'>
+          <%= image_tag "job_roudousya_young.png", class:"list-pict1" %>
+          <h3 class='reason-list-text1'>
+            <span class='reason-list-blue-text'>誰でもシフト希望を見ながら<br>シフト作成が出来る!</span>
           </h3>
-          <p class='reason-list-description'>
-            シフト作成が出来る!
-          </p>
-          <%= image_tag "isogashii_man.png", class:"list-pict" %>
+            <div class="square-top">
+              <div class="square1">w</div>
+              <div class="square2">a</div>
+              <div class="square3">p</div>
+              <div class="square4">s</div>
+              <div class="square5">!</div>
+            </div>
         </li>
-        <li class='list'>
-          <%= image_tag "furima-intro03.png", class:"list-pict" %>
-          <span class='reason-list-number'></span>
-          <h3 class='reason-list-text'>
-            どこでも
-            <span class='reason-list-blue-text'>いつでも</span>
+        <li class='list2'>
+          <%= image_tag "furima-intro03.png", class:"list-pict2" %>
+          <h3 class='reason-list-text2'>
+            <span class='reason-list-blue-text'>どこでも いつでも<br>新しいシフトを確認できる！</span>
           </h3>
-          <p class='reason-list-description'>
-            新しいシフトを確認できる！
-          </p>
         </li>
       </ul>
     </div>

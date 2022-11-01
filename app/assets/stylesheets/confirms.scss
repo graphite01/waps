@@ -10,6 +10,78 @@
 .main {
   background-color: aliceblue;
   border-bottom: 1px solid rgb(221, 221, 221);
+  width: 100%;
+  height: 100%;
+}
+
+.square-top {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.square1 {
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  background: rgb(184, 221, 0);
+  color: white;
+  font-size: 60px;
+  padding:50px 90px;
+  max-width: 100%;
+  width:10%;
+}
+
+.square2 {
+  height: 200px;
+  width: 200px;
+  margin-top: 120px;
+  background: rgb(158, 0, 221);
+  color: white;
+  font-size: 60px;
+  padding:50px 90px;
+  max-width: 100%;
+  width:10%;
+}
+
+.square3 {
+  height: 200px;
+  width: 200px;
+  margin-top: 39px;
+  background: #0bd;
+  color: white;
+  font-size: 60px;
+  padding:50px 90px;
+  max-width: 100%;
+  width:10%;
+}
+
+.square4 {
+  height: 200px;
+  width: 200px;
+  margin-top: 128px;
+  background: rgb(85, 221, 0);
+  color: white;
+  font-size: 60px;
+  padding:50px 90px;
+  max-width: 100%;
+  width:10%;
+}
+
+.square5 {
+  height: 200px;
+  width: 200px;
+  margin-top: 59px;
+  margin-right: 20px;
+  background: rgb(221, 0, 55);
+  color: white;
+  font-size: 60px;
+  padding:50px 90px;
+  max-width: 100%;
+  width:10%;
 }
 
 .title-contents {
@@ -29,6 +101,8 @@
 
 .service-title {
   font-size: 8vh;
+  max-width: 100%;
+  height: auto;
 }
 
 .service-explain {
@@ -44,29 +118,39 @@
 .apple-btn {
   margin-right: 1vw;
   height: 9vh;
+  max-width: 100%;
 }
 
 .google-btn {
   height: 9vh;
+  max-width: 100%;
 }
 
 .title {
   background-color: lightblue;
   color: whitesmoke;
   font-size: 60px;
+  width: 100vw;
   text-align: center;
+  max-width: 100%;
+  height: auto;
 }
 
 .reason-lists {
   display: flex;
   justify-content: center;
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
 }
 
 .reason-list-blue-text {
   background-color: lightblue;
   color: whitesmoke;
   font-size: 50px;
-  padding-left: 20px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .reason-list-description {
@@ -74,17 +158,49 @@
   color: whitesmoke;
   font-size: 50px;
   padding-left: 40px;
+  margin-right: 5px;
+  max-width: 100%;
+  height: auto;
 }
 
-.reason-list-text {
+.reason-list-text1 {
   background-color: lightblue;
   color: whitesmoke;
   font-size: 50px;
-  padding-left: 20px;
+  margin-right: 5px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
 }
 
-.list-pict {
-  background-color: #fff;
+.reason-list-text2 {
+  background-color: lightblue;
+  color: whitesmoke;
+  font-size: 50px;
+  margin-right: 5px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.list-pict1 {
+  background-color: aliceblue;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.list-pict2 {
+  background-color: aliceblue;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .shiftname {
@@ -109,4 +225,20 @@
   display: block;
   margin: 0 auto;
   margin-top: -10px;
+}
+
+.list1 {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.list2 {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.select-reason-contents {
+  width: 100vw;
 }
