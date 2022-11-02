@@ -6,12 +6,14 @@
         <div class="comment-contents"><%= comment.content %></div>
         <div class="comment-user-name"><%= comment.user.name %></div>
         <% end %>
+        <div id = "plascomment"></div>
+        <div hidden id = "current_username"><%= current_user.name %></div>
     </div>
   
   <div class="comment-form-table">
-    <%= form_with model: @comment, local: true do |f| %>
-      <%= f.text_field :content, class: 'form-comment', placeholder: '  コメントする' %>
-      <%= f.submit '送信', class: 'form-comment-submit' %>
+    <%= form_with model: @comment, method: :post, id: "comment-form" do |form| %>
+      <%= form.text_field :content, class: 'form-comment', placeholder: '  コメントする', id: "form-comment-content" %>
+      <%= form.submit '送信', class: 'form-comment-submit', id: "comment-submit" %>
     <% end %>
   </div>
 </div>
