@@ -53,31 +53,45 @@ https://docs.google.com/spreadsheets/d/18I60KlVwaw5Go3nxRlF59gyH3h_71O7uHNS7KceR
 # 実装した機能についての画像やGIFおよびその説明
 ## シフト希望画面
 ・シフト希望入力画面  
-[![Image from Gyazo](https://i.gyazo.com/b55802549843082c6afe030d105d4949.png)](https://gyazo.com/b55802549843082c6afe030d105d4949)  
+[![Image from Gyazo](https://i.gyazo.com/20141eadee511198041c303ae91687a4.png)](https://gyazo.com/20141eadee511198041c303ae91687a4)  
 ・上記入力後  
-[![Image from Gyazo](https://i.gyazo.com/1477a2d0703caca5369aa1bdc5fece08.png)](https://gyazo.com/1477a2d0703caca5369aa1bdc5fece08)  
+[![Image from Gyazo](https://i.gyazo.com/e58d3f6b8c24013844ecde24b2a98dbc.png)](https://gyazo.com/e58d3f6b8c24013844ecde24b2a98dbc)  
+・シフト希望入力動画  
+[![Image from Gyazo](https://i.gyazo.com/53f71716c2ebf0ae7c4bf570fceda34e.gif)](https://gyazo.com/53f71716c2ebf0ae7c4bf570fceda34e)  
 
 ## シフト作成画面
 ・シフト作成画面上部(シフト希望画面表示)  
-[![Image from Gyazo](https://i.gyazo.com/1832eab9db9015ca60648553a56be495.png)](https://gyazo.com/1832eab9db9015ca60648553a56be495)  
+[![Image from Gyazo](https://i.gyazo.com/9dea7786ca5baa31febebb8440ea302d.png)](https://gyazo.com/9dea7786ca5baa31febebb8440ea302d)  
+  
 ・シフト作成画面下部(シフト作成入力画面表示)  
-[![Image from Gyazo](https://i.gyazo.com/2f54d273a98f220b439210f3fc356835.png)](https://gyazo.com/2f54d273a98f220b439210f3fc356835)  
-・上記入力後  
-[![Image from Gyazo](https://i.gyazo.com/fc94647252c456095803bf9e0f8a5a30.png)](https://gyazo.com/fc94647252c456095803bf9e0f8a5a30)  
+[![Image from Gyazo](https://i.gyazo.com/cc70e58340ce7ce136596d08030c61b4.png)](https://gyazo.com/cc70e58340ce7ce136596d08030c61b4)  
+  
+・上記入力後画面上部(シフト希望画面表示)  
+[![Image from Gyazo](https://i.gyazo.com/d5160211b744b9e03b0a85868ba56ace.png)](https://gyazo.com/d5160211b744b9e03b0a85868ba56ace)  
+  
+・上記入力後画面下部(シフト作成入力画面表示)  
+[![Image from Gyazo](https://i.gyazo.com/7bf32252c21a1f42380570c7d3b9d7e6.png)](https://gyazo.com/7bf32252c21a1f42380570c7d3b9d7e6)  
+  
+・シフト作成動画1  
+[![Image from Gyazo](https://i.gyazo.com/eb7046f4b36cc90473832e3f33488426.gif)](https://gyazo.com/eb7046f4b36cc90473832e3f33488426)  
+  
+・シフト作成動画2  
+[![Image from Gyazo](https://i.gyazo.com/4cd2cd6e2b0c09fa55f16519404d6e9f.gif)](https://gyazo.com/4cd2cd6e2b0c09fa55f16519404d6e9f)  
 
 ## コメント機能画面
 ・コメント一覧&入力画面(トップページ下部)  
-[![Image from Gyazo](https://i.gyazo.com/b8be0c22fd09e67f5a2e2c0618dbf695.png)](https://gyazo.com/b8be0c22fd09e67f5a2e2c0618dbf695)  
-・コメント入力後  
-[![Image from Gyazo](https://i.gyazo.com/89cd678d73fa1a5f3df633c6d3fadf71.png)](https://gyazo.com/89cd678d73fa1a5f3df633c6d3fadf71)  
+[![Image from Gyazo](https://i.gyazo.com/4781321057ff459a714f0c6d4f6cc967.png)](https://gyazo.com/4781321057ff459a714f0c6d4f6cc967)  
+・コメント入力&一覧動画  
+  [![Image from Gyazo](https://i.gyazo.com/0461cd722ddebf0c9b5b56c8974c50f7.gif)](https://gyazo.com/0461cd722ddebf0c9b5b56c8974c50f7)  
 
 # 実装予定の機能
-現在、GoogleカレンダーのAPIを利用して、シフト内容をGoogleカレンダー側へエクスポートする機能を実装中です。  
-今後はLINEのAPIを使用して、シフトが修正・変更があった際に通知で知らせる機能を実装予定しています。  
+現在は、新規登録やログイン時にGoogleアカウントを使用しての登録とログイン機能の実装をしております。  
+今後は、GoogleカレンダーのAPIを利用して、シフト内容をGoogleカレンダー側へエクスポートする機能を実装予定です。  
+またLINEのAPIを使用して、シフトが修正・変更があった際に通知で知らせる機能を実装予定しています。  
 カレンダーの月めくり、シフト希望とシフト作成時のajax化も実装予定です。  
 
 # データベース設計
-[![Image from Gyazo](https://i.gyazo.com/cf8375f55dc890e9ab3732963315654a.png)](https://gyazo.com/cf8375f55dc890e9ab3732963315654a)  
+[![Image from Gyazo](https://i.gyazo.com/c8e40163e1b8924d55123fe35f3d0d0b.png)](https://gyazo.com/c8e40163e1b8924d55123fe35f3d0d0b)  
 
 # 画面遷移図
 [![Image from Gyazo](https://i.gyazo.com/e7a7df954e529b30343f1b90c1bf66a6.png)](https://gyazo.com/e7a7df954e529b30343f1b90c1bf66a6)  
