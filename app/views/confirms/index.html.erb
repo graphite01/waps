@@ -31,7 +31,7 @@
           <h3 class='reason-list-text1'>
             <span class='reason-list-blue-text'>誰でもシフト希望を見ながら<br>シフト作成が出来る!</span>
           </h3>
-            <div class="square-top">
+            <div class="square-top-confirm">
               <div class="square1"><div class="squ1-1">w</div></div>
               <div class="square2"><div class="squ2-1">a</div></div>
               <div class="square3"><div class="squ3-1">p</div></div>
@@ -52,7 +52,7 @@
   <%# シフト表示部分 %>
   <% if user_signed_in? %>
     <div id="calendar">
-      <%= render "shared/create_siftcalendar"%>
+      <%= render partial: "shared/create_siftcalendar", locals: {confirms: @confirms} %>
     </div>
     <%= render "shared/comment_forms" %>
   <% end %>
