@@ -1,0 +1,70 @@
+.new-registration-board {
+  width: 100vw;
+  height: 80vh;
+}
+
+.new-user-registration-title {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.mail-registration-link {
+  margin-bottom: 50px;
+  margin-top: 200px;
+  justify-content: center;
+  text-align: center;
+}
+
+.e-mail-icon-image {
+  width: 600px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.e-mail-icon-image img {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.email-registration-titles {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin-left: 100px;
+  padding-right: 50px;
+}
+
+.google-registration-link {
+  margin-bottom: 50px;
+  margin-top: 100px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.google-icon-image {
+  width: 600px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-icon-image img {
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
+}
+
+.google-registration-titles {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin-left: 100px;
+  padding-right: 50px;
+}

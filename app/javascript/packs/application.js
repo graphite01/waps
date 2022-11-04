@@ -7,6 +7,9 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 require("../scroll-under")
+require("../poyopoyo")
+require("../comment")
+require("../hopenew")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

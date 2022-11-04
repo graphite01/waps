@@ -1,4 +1,4 @@
-<%= month_calendar events: @confirms do |date, confirms| %>
+<%= month_calendar events: @confirms, previous_link: events_ajax_previous_link, next_link: events_ajax_next_link do |date, confirms| %>
   <%= date.day %>
     <% confirms.each do |confirm| %>
     <div class="hope-edit">

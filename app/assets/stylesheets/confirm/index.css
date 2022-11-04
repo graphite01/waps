@@ -1,0 +1,10 @@
+.square-top-confirm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 200px 20px 100px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 50%;
+  height: auto;
+}

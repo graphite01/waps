@@ -31,6 +31,6 @@ yarn-debug.log*
 .yarn-integrity
 .Ds_Store
 
-/credentials.json
+/client_secrets.json
 /token.yaml
-/app/javascript/config.json
+.credentials.json
