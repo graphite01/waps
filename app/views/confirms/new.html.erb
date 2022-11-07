@@ -1,9 +1,13 @@
 <%= render "shared/second-header"%>
 <div class='main'>
   <div class = shiftname> シフト希望 </div>
-  <%= render "shared/siftcalendar"%>
+  <div id="hope-calendar">
+    <%= render "shared/siftcalendar", hopes: @hopes %>
+  </div>
   <div class = shiftname> シフト作成 </div>
-  <%= render "shared/create_siftcalendar"%>
+  <div id="confirm-calendar">
+    <%= render "shared/create_siftcalendar", confirms: @confirms %>
+  </div>
   <%= render "shared/create_form"%>
 </div>
 <%= render "shared/second-footer"%>

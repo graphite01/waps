@@ -1,6 +1,8 @@
 <%= render "shared/second-header"%>
 <div class='main'>
-  <%= render "shared/siftcalendar"%>
+  <div id="hope-calendar">
+    <%= render "shared/siftcalendar", hopes: @hopes %>
+  </div>
   <div class = shift-hopename> シフト希望入力 </div>
   <div class = form-hope-main><%= render "shared/form"%></div>
 <div class='main'>

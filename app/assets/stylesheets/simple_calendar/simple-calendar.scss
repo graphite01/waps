@@ -110,31 +110,21 @@
   }
   
   .calendar-title {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
     color: whitesmoke;
-  }
-
-  .next-monthpage {
-    margin-right: 220px;
-    margin-left: auto;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    width: 5%;
-    display: block;
-  }
-  
-  .previous-monthpage {
-    margin-right: auto;
-    margin-left: 220px;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    width: 5%;
-    display: block;
   }
   
   .calendar-title-head {
     display: flex;
+    justify-content: space-around;
+  }
+
+  .calendar-title-head a {
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bolder;
   }
 
   .past a {

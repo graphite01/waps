@@ -51,8 +51,8 @@
   <%# /Wapsが選ばれる理由部分 %>
   <%# シフト表示部分 %>
   <% if user_signed_in? %>
-    <div id="calendar">
-      <%= render partial: "shared/create_siftcalendar", locals: {confirms: @confirms} %>
+    <div id="confirm-calendar">
+      <%= render "shared/create_siftcalendar", confirms: @confirms %>
     </div>
     <%= render "shared/comment_forms" %>
   <% end %>
