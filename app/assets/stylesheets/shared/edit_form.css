@@ -35,4 +35,12 @@
 .confirm-destroy-tables {
   background-color: lightblue;
   padding: 20px;
+  text-align: center;
+}
+
+.confirm-destroy {
+  width: 85px;
+  height: 35px;
+  font-size: 20px;
+  margin-right: 12px;
 }

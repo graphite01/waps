@@ -150,13 +150,6 @@
   padding-top: 15px;
 }
 
-.confirm-destroy {
-  font-size: 20px;
-  display: block;
-  margin: 0 auto;
-  margin-top: -10px;
-}
-
 .list1 {
   width: 50%;
   max-width: 100%;
@@ -171,4 +164,14 @@
 
 .select-reason-contents {
   width: 100vw;
+}
+
+#s-hope-calendar {
+  overflow: scroll;
+  height: 400px;
+}
+
+#s-confirm-calendar {
+  overflow: scroll;
+  height: 400px;
 }

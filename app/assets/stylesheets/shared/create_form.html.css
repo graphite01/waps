@@ -1,11 +1,12 @@
 .create-form-table-date {
   background-color: lightblue;
+  display: flex;
+  justify-content: center;
 }
 
 .create-form-username {
-  text-align: center;
   font-size: 20px;
-  padding: 20px 60px 0;
+  padding: 20px 80px 0;
   margin-bottom: 20px;
 }
 
@@ -15,7 +16,6 @@
 
 .create-form-works-status {
   padding-bottom: 20px;
-  text-align: center;
   font-size: 20px;
 }
 
@@ -25,19 +25,21 @@
 
 .create-form-content {
   padding-bottom: 20px;
-  text-align: center;
   font-size: 20px;
 }
 
-.create-form-time {
-  padding-bottom: 20px;
-  text-align: center;
+.s-create-form-time {
+  padding: 20px 0 20px ;
   font-size: 20px;
+}
+
+.e-create-form-time {
+  font-size: 20px;
+  padding-top: 3px;
 }
 
 .create-form-submit {
-  text-align: center;
   font-size: 20px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
