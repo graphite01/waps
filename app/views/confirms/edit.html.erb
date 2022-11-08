@@ -10,6 +10,9 @@
   <div id="edit-confirm-form-id">
     <%= render "shared/create_form", confirms: @confirms%>
   </div>
-  <div class = "confirm-destroy-tables"><%= button_to "削除する", confirm_path(@confirm.id), method: :delete, class:"confirm-destroy" %></div>
+  <div class = "confirm-destroy-tables">
+    <%= button_to "作成画面に戻る", new_confirm_path, method: :get, class:"hope-back-button" %>
+    <%= button_to "削除する", confirm_path(@confirm.id), method: :delete, class:"confirm-destroy" %>
+  </div>
 </div>
 <%= render "shared/second-footer"%>
