@@ -19,10 +19,13 @@ class ConfirmsController < ApplicationController
     start_time = start_time_save
     end_time = end_time_save
     @confirm = Confirm.new(confirm_params)
-    if @confirm.save
-      redirect_to new_confirm_path
-    else
-      render :new
+    respond_to do |format|
+      if @confirm.save
+        format.html {redirect_to new_confirm_path}
+        format.js
+      else
+        format.html {render :new}
+      end
     end
   end
 
@@ -32,10 +35,13 @@ class ConfirmsController < ApplicationController
   end
 
   def update
-    if @confirm.update(confirm_params)
-      redirect_to new_confirm_path
-    else
-      render :edit
+    respond_to do |format|
+      if @confirm.update(confirm_params)
+        format.html {redirect_to new_confirm_path}
+        format.js
+      else
+        format.html {render :edit}
+      end
     end
   end
 

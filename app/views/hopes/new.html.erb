@@ -4,6 +4,8 @@
     <%= render "shared/siftcalendar", hopes: @hopes %>
   </div>
   <div class = shift-hopename> シフト希望入力 </div>
-  <div class = form-hope-main><%= render "shared/form"%></div>
+    <div id="hope-form-id">
+      <%= render "shared/form", hopes: @hopes %>
+    </div>
 <div class='main'>
 <%= render "shared/second-footer"%>

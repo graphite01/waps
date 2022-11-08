@@ -1,4 +1,4 @@
-<%= form_with model: @hope, url: hopes_path, local: true do |f| %>
+<%= form_with model: @hope, url: hopes_path, method: :post do |f| %>
   <%= render 'shared/error_messages', model: f.object %>
     <div class="form-work-status">
       <%= f.label :"勤務状態"%>
@@ -19,7 +19,7 @@
       <%= f.datetime_select :end_time, minute_step: 5 %>
     </div>
 
-    <div class="form-submit-hope">
+    <div class="form-submit-hope", id="hope-submit">
       <%= f.submit %>
     </div>
 

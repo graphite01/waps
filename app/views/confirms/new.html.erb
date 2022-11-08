@@ -8,6 +8,8 @@
   <div id="s-confirm-calendar">
     <%= render "shared/create_siftcalendar", confirms: @confirms %>
   </div>
-  <%= render "shared/create_form"%>
+  <div id="confirm-create-form-id">
+    <%= render "shared/create_form", confirms: @confirms%>
+  </div>
 </div>
 <%= render "shared/second-footer"%>

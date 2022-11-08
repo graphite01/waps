@@ -7,11 +7,11 @@
       <%= confirm.work_status.name %>
       <% if confirm.work_status.name == "出勤" %><br>
         <%= "#{confirm.start_time.hour}時" %>
-        <% if confirm.start_time.min != 00 %>
+        <% if confirm.start_time.min != 0 %>
           <%= "#{confirm.start_time.min}分" %>
         <% end %>
         <%= "~ #{confirm.end_time.hour}時" %>
-        <% if confirm.start_time.min != 00 %>
+        <% if confirm.start_time.min != 0 %>
           <%= "#{confirm.end_time.min}分" %>
         <% end %>
       <% end %>

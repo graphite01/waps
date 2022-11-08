@@ -7,11 +7,11 @@
       <%= hope.work_status.name %>
       <% if hope.work_status.name == "出勤" %><br>
         <%= "#{hope.start_time.hour}時" %>
-        <% if hope.start_time.min != 00 %>
+        <% if hope.start_time.min != 0 %>
           <%= "#{hope.start_time.min}分" %>
         <% end %>
         <%= "~ #{hope.end_time.hour}時" %>
-        <% if hope.start_time.min != 00 %>
+        <% if hope.start_time.min != 0 %>
           <%= "#{hope.end_time.min}分" %>
         <% end %>
       <% end %>

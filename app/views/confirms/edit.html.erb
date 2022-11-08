@@ -3,9 +3,13 @@
   <div class = shiftname> シフト希望 </div>
   <%= render "shared/siftcalendar"%>
   <div class = shiftname> シフト作成 </div>
-  <%= render "shared/create_siftcalendar"%>
+  <div id="edit-confirm-calendar">
+    <%= render "shared/create_siftcalendar", confirms: @confirms %>
+  </div>
   <div class = shift-confirms-main-edit>シフト作成 内容修正</div>
-  <%= render "shared/create_form"%>
+  <div id="edit-confirm-form-id">
+    <%= render "shared/create_form", confirms: @confirms%>
+  </div>
   <div class = "confirm-destroy-tables"><%= button_to "削除する", confirm_path(@confirm.id), method: :delete, class:"confirm-destroy" %></div>
 </div>
 <%= render "shared/second-footer"%>

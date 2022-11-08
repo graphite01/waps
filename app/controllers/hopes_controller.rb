@@ -15,14 +15,17 @@ class HopesController < ApplicationController
     start_time = start_time_save
     end_time = end_time_save
     @hope = Hope.new(hope_params)
-    if @hope.save
-      @confirm_date = Confirm.new(params.require(:hope).permit(:work_status_id, :content, :start_time, :end_time).merge(
-                                    user_id: current_user.id, hope_id: @hope.id
-                                  ))
-      @confirm_date.save
-      redirect_to hopes_path
-    else
-      render :new
+    respond_to do |format|
+      if @hope.save
+        @confirm_date = Confirm.new(params.require(:hope).permit(:work_status_id, :content, :start_time, :end_time).merge(
+                                      user_id: current_user.id, hope_id: @hope.id
+                                    ))
+        @confirm_date.save
+        format.html {redirect_to hopes_path}
+        format.js
+      else
+        format.html {render :new}
+      end
     end
   end
 
