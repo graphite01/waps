@@ -68,7 +68,7 @@ https://docs.google.com/spreadsheets/d/18I60KlVwaw5Go3nxRlF59gyH3h_71O7uHNS7KceR
 ・上記入力後  
 [![Image from Gyazo](https://i.gyazo.com/e58d3f6b8c24013844ecde24b2a98dbc.png)](https://gyazo.com/e58d3f6b8c24013844ecde24b2a98dbc)  
 ・シフト希望入力動画(ajax化した為、動画差し替え)  
-[![Image from Gyazo](https://i.gyazo.com/e67a1eda53b75ad88c2b87aba54aa144.gif)](https://gyazo.com/e67a1eda53b75ad88c2b87aba54aa144)  
+[![Image from Gyazo](https://i.gyazo.com/c5829f4a761c01fe48350b66757b4d61.gif)](https://gyazo.com/c5829f4a761c01fe48350b66757b4d61)  
   
 ## シフト作成画面
 ・シフト作成画面(シフト希望画面とシフト作成画面をスクロール機能追加&シフト作成機能ajax化した為、画像を差し替え)  
