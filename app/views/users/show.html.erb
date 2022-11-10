@@ -28,10 +28,10 @@
           </tr>
         </tbody>
       </table>
-      <%#= button_to "Googleカレンダーに同期する", 'https://docs.google.com/spreadsheets/d/10TEPIiWP3zFihJJqcqajY3FYnHKyW8G-otoTNh_8OOw/edit#gid=0', {method: "POST", id: "g-button" } %>
     </div>
     <div class="user-edit-page-button">
       <%= link_to "ユーザー情報の修正", edit_user_path(current_user) %>
+      <%= link_to "Googleカレンダーに同期する", user_oauth2callback_path(current_user), {method: "GET", id: "g-button" }%>
     </div>
   </div>
 </div>
