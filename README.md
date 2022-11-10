@@ -95,8 +95,6 @@ https://docs.google.com/spreadsheets/d/18I60KlVwaw5Go3nxRlF59gyH3h_71O7uHNS7KceR
 [![Image from Gyazo](https://i.gyazo.com/02830a9cd3541547483d60ae30d222d4.gif)](https://gyazo.com/02830a9cd3541547483d60ae30d222d4)  
   
 # 実装予定の機能
-[実装済み]~~現在は、新規登録やログイン時にGoogleアカウントを使用しての登録とログイン機能の実装をしております。~~  
-[実装済み]~~カレンダーの月めくり、シフト希望とシフト作成時のajax化も実装予定です。~~  
 今後は、GoogleカレンダーのAPIを利用して、シフト内容をGoogleカレンダー側へエクスポートする機能を実装予定です。  
 またLINEのAPIを使用して、シフトが修正・変更があった際に通知で知らせる機能を実装予定しています。  
 
