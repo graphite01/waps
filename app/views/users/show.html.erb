@@ -31,7 +31,7 @@
     </div>
     <div class="user-edit-page-button">
       <%= link_to "ユーザー情報の修正", edit_user_path(current_user) %>
-      <%= link_to "Googleカレンダーに同期する", user_oauth2callback_path(current_user), {method: "GET", id: "g-button" }%>
+      <%= link_to "Googleカレンダーに同期する", "user_oauth2callback_path(current_user)", {method: "GET", id: "g-button" }%>
     </div>
   </div>
 </div>
