@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   resources :hopes
   resources :confirms
   resources :comments
-  resources :users, only: [:index, :new, :show, :edit, :update, :destroy]
+  resources :users, only: [:index, :new, :show, :edit, :update, :destroy] do
+    get "oauth2callback", to:"gcalendars#callback"
+  end
 end
