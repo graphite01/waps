@@ -21,10 +21,10 @@ class HopesController < ApplicationController
                                       user_id: current_user.id, hope_id: @hope.id
                                     ))
         @confirm_date.save
-        format.html {redirect_to hopes_path}
+        format.html { redirect_to hopes_path }
         format.js
       else
-        format.html {render :new}
+        format.html { render :new }
       end
     end
   end

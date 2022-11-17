@@ -21,10 +21,10 @@ class ConfirmsController < ApplicationController
     @confirm = Confirm.new(confirm_params)
     respond_to do |format|
       if @confirm.save
-        format.html {redirect_to new_confirm_path}
+        format.html { redirect_to new_confirm_path }
         format.js
       else
-        format.html {render :new}
+        format.html { render :new }
       end
     end
   end
@@ -37,10 +37,10 @@ class ConfirmsController < ApplicationController
   def update
     respond_to do |format|
       if @confirm.update(confirm_params)
-        format.html {redirect_to new_confirm_path}
+        format.html { redirect_to new_confirm_path }
         format.js
       else
-        format.html {render :edit}
+        format.html { render :edit }
       end
     end
   end

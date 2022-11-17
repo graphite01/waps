@@ -1,16 +1,16 @@
-require "google/apis/calendar_v3"
-require "googleauth"
-require "googleauth/stores/file_token_store"
-require "date"
-require "fileutils"
+require 'google/apis/calendar_v3'
+require 'googleauth'
+require 'googleauth/stores/file_token_store'
+require 'date'
+require 'fileutils'
 
-REDIRECT_URI = "http://localhost:3000/oauth2callback".freeze
-APPLICATION_NAME = "waps-38514".freeze
-CREDENTIALS_PATH = "client_secrets.json".freeze
+REDIRECT_URI = 'http://localhost:3000/oauth2callback'.freeze
+APPLICATION_NAME = 'waps-38514'.freeze
+CREDENTIALS_PATH = 'client_secrets.json'.freeze
 # The file token.yaml stores the user's access and refresh tokens, and is
 # created automatically when the authorization flow completes for the first
 # time.
-TOKEN_PATH = "token.yaml".freeze
+TOKEN_PATH = 'token.yaml'.freeze
 SCOPE = Google::Apis::CalendarV3::AUTH_CALENDAR_READONLY
 
 ##
@@ -24,11 +24,11 @@ def oauth2callback
     client_id = Google::Auth::ClientId.from_file CREDENTIALS_PATH
     token_store = Google::Auth::Stores::FileTokenStore.new file: TOKEN_PATH
     authorizer = Google::Auth::UserAuthorizer.new client_id, SCOPE, token_store
-    user_id = "kikutatomokazu4@gmail.com"
+    user_id = 'kikutatomokazu4@gmail.com'
     credentials = authorizer.get_credentials user_id
     if credentials.nil?
       url = authorizer.get_authorization_url base_url: REDIRECT_URI
-      puts "Open the following URL in the browser and enter the " \
+      puts 'Open the following URL in the browser and enter the ' \
           "resulting code after authorization:\n" + url
       code = gets
       credentials = authorizer.get_and_store_credentials_from_code(
@@ -52,14 +52,14 @@ def oauth2callback
   end
 
   # Fetch the next 10 events for the user
-  calendar_id = "primary"
+  calendar_id = 'primary'
   response = service.list_events(calendar_id,
-                                max_results:   10,
-                                single_events: true,
-                                order_by:      "startTime",
-                                time_min:      DateTime.now.rfc3339)
-  puts "Upcoming events:"
-  puts "No upcoming events found" if response.items.empty?
+                                 max_results: 10,
+                                 single_events: true,
+                                 order_by: 'startTime',
+                                 time_min: DateTime.now.rfc3339)
+  puts 'Upcoming events:'
+  puts 'No upcoming events found' if response.items.empty?
   response.items.each do |event|
     start = event.start.date || event.start.date_time
     puts "- #{event.summary} (#{start})"
