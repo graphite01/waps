@@ -3,6 +3,6 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 200px 20px 150px;
-  width: auto;
+  width: 100%;
   height: auto;
 }
