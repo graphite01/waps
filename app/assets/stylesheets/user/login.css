@@ -2,10 +2,12 @@
   width: 50%;
   margin: 0 auto;
   margin-top: 50px;
+  height: auto;
 }
 
 .login-red-btn {
   width: 100%;
+  height: auto;
   background: #ea352d;
   border: 1px solid #ea352d;
   color: #fff;
@@ -21,13 +23,6 @@
 
 .form-header-text {
   font-size: 30px;
-}
-
-.form-wraps {
-  height: calc(100vh - 200px);
-  width: 50%;
-  background-color: white;
-  padding-bottom: 70px;
 }
 
 .google-session-link {

@@ -15,7 +15,7 @@ https://waps-38514.herokuapp.com/
 ・ 管理者用メールアドレス : kikutatomokazu4@gmail.com  
 ・ 管理者用パスワード : ki44444444  
 ・ 一般用メールアドレス : ue@gmail.com  
-・ 一般用パスワード : ue222222  
+・ 一般用パスワード : u222222  
 
 # 利用方法
 ・ユーザー登録する  
