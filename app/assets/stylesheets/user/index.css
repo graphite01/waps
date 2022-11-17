@@ -10,7 +10,7 @@
 }
 
 .index-user-dates {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 250px);
   padding: 20px 80px;
 }
