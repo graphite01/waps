@@ -1,8 +1,109 @@
 .square-top-confirm {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 200px 20px 150px;
+  justify-content: space-around;
   width: 100%;
   height: auto;
+  margin-top: 1%;
+}
+
+.square1 {
+  background: rgb(255, 221, 0);
+  width: 18%;
+  height: 50%;
+  display: block;
+}
+
+.squ1-1 {
+  background: rgb(242, 242, 114);
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+  width: 100%;
+  height: 100%;
+  padding-left: 30%;
+  padding-bottom: 20%;
+  padding-top: 20%;
+}
+
+.square2 {
+  background: rgb(167, 43, 167);
+  width: 18%;
+  height: 50%;
+  margin-top: 10%;
+  display: block;
+}
+
+.squ2-1 {
+  background: rgb(219, 127, 255);
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+  width: 100%;
+  height: 100%;
+  padding-left: 40%;
+  padding-bottom: 20%;
+  padding-top: 20%;
+}
+
+
+.square3 {
+  background: rgb(75, 75, 255);
+  width: 18%;
+  height: 50%;
+  display: block;
+}
+
+.squ3-1 {
+  background: #0bd;
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+  width: 100%;
+  height: 100%;
+  padding-left: 30%;
+  padding-bottom: 20%;
+  padding-top: 20%;
+}
+
+
+.square4 {
+  background: rgb(32, 173, 32);
+  width: 18%;
+  height: 50%;
+  margin-top: 10%;
+  display: block;
+}
+
+.squ4-1 {
+  background: rgb(85, 221, 0);
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+  width: 100%;
+  height: 100%;
+  padding-left: 40%;
+  padding-bottom: 20%;
+  padding-top: 20%;
+}
+
+
+.square5 {
+  background: rgb(255, 0, 0);
+  width: 18%;
+  height: 50%;
+  margin-top: 40px;
+  display: block;
+}
+
+.squ5-1 {
+  background: rgb(255, 125, 125);
+  color: white;
+  font-size: 60px;
+  font-weight: bolder;
+  width: 100%;
+  height: 100%;
+  padding-left: 30%;
+  padding-bottom: 20%;
+  padding-top: 20%;
 }

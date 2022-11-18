@@ -9,6 +9,7 @@ require("channels")
 require("../scroll-under")
 require("../poyopoyo")
 require("../comment")
+require("../hope-poyopoyo")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

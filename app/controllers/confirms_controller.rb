@@ -53,7 +53,7 @@ class ConfirmsController < ApplicationController
   private
 
   def confirm_all
-    @confirms = Confirm.all
+    @confirms = Confirm.includes(:user)
   end
 
   def manager_only

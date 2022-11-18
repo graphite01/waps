@@ -1,130 +1,112 @@
-.square-top-hope {
+.hsquare-top-hope {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding-left: 210px;
+  justify-content: space-around;
   width: 100%;
-  padding-bottom: 60px;
   height: auto;
-  background-color: aliceblue;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
-.square1 {
-  height: 120px;
-  margin-top: 10px;
+.hsquare1 {
   background: rgb(255, 221, 0);
-  padding:10px 70px 130px 70px;
-  max-width: 10%;
-  width: 120px;
-  transform: translate(-110px,20px);
+  margin-left: 20%;
+  width: 10%;
+  height: 50%;
+  display: block;
 }
 
-.squ1-1 {
-  height: 120px;
-  margin-top: 10px;
+.hsqu1-1 {
   background: rgb(242, 242, 114);
   color: white;
   font-size: 60px;
   font-weight: bolder;
-  padding:10px 70px 130px 70px;
-  max-width: 10%;
-  min-width:10%;
-  transform: translate(-70px,-20px);
+  width: 100%;
+  height: 100%;
+  padding-left: 40%;
+  padding-bottom: 20%;
+  padding-top: 20%;
 }
 
-.square2 {
-  height: 120px;
-  margin-top: 102px;
+.hsquare2 {
   background: rgb(167, 43, 167);
-  padding:10px 70px 130px 70px;
-  max-width: 10%;
-  width: 120px;
-  transform: translate( -90px,22px);
+  width: 10%;
+  height: 50%;
+  margin-top: 10%;
+  display: block;
 }
 
-.squ2-1 {
-  height: 120px;
-  margin-top: 10px;
+.hsqu2-1 {
   background: rgb(219, 127, 255);
   color: white;
   font-size: 60px;
   font-weight: bolder;
-  padding:10px 70px 130px 70px;
-  max-width: 10%;
-  min-width:10%;
-  transform: translate(-70px,-20px);
+  width: 100%;
+  height: 100%;
+  padding-left: 40%;
+  padding-bottom: 20%;
+  padding-top: 20%;
 }
 
 
-.square3 {
-  height: 120px;
-  width: 120px;
-  margin-top: 39px;
+.hsquare3 {
   background: rgb(75, 75, 255);
-  padding:10px 70px 130px 70px;
-  max-width: 10%;
-  transform: translate(-100px,-20px);
+  width: 10%;
+  height: 50%;
+  display: block;
 }
 
-.squ3-1 {
-  height: 120px;
-  margin-top: 10px;
+.hsqu3-1 {
   background: #0bd;
   color: white;
   font-size: 60px;
   font-weight: bolder;
-  padding:10px 70px 130px 70px;
-  max-width: 10%;
-  min-width:10%;
-  transform: translate(-65px,-15px);
+  width: 100%;
+  height: 100%;
+  padding-left: 40%;
+  padding-bottom: 20%;
+  padding-top: 20%;
 }
 
 
-.square4 {
-  height: 120px;
-  width: 120px;
-  margin-top: 104px;
+.hsquare4 {
   background: rgb(32, 173, 32);
-  padding:10px 70px 130px 70px;
-  margin-right: 80px;
-  max-width: 100%;
-  transform: translate(-105px,34px);
+  width: 10%;
+  height: 50%;
+  margin-top: 10%;
+  display: block;
 }
 
-.squ4-1 {
-  height: 120px;
-  margin-top: 10px;
+.hsqu4-1 {
   background: rgb(85, 221, 0);
   color: white;
   font-size: 60px;
   font-weight: bolder;
-  padding:10px 70px 130px 70px;
-  max-width: 10%;
-  min-width:10%;
-  transform: translate(-70px,-25px);
+  width: 100%;
+  height: 100%;
+  padding-left: 40%;
+  padding-bottom: 20%;
+  padding-top: 20%;
 }
 
 
-.square5 {
-  height: 120px;
-  width: 120px;
-  margin-top: 59px;
+.hsquare5 {
   background: rgb(255, 0, 0);
-  margin-right: 20px;
-  padding:10px 70px 130px 70px;
-  max-width: 100%;
-  transform: translate(-180px,0px);
+  margin-right: 20%;
+  width: 10%;
+  height: 50%;
+  margin-top: 40px;
+  display: block;
 }
 
-.squ5-1 {
-  height: 120px;
-  margin-top: 10px;
+.hsqu5-1 {
   background: rgb(255, 125, 125);
   color: white;
   font-size: 60px;
   font-weight: bolder;
-  padding:10px 70px 130px 70px;
-  max-width: 10%;
-  min-width:10%;
-  transform: translate(-65px,-15px);
+  width: 100%;
+  height: 100%;
+  padding-left: 40%;
+  padding-bottom: 20%;
+  padding-top: 20%;
 }

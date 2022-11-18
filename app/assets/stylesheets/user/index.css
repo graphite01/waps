@@ -23,6 +23,7 @@
 
 .users-date-tables {
   display: flex;
+  word-wrap: break-word;
   font-size: 20px;
   background-color: whitesmoke;
 }

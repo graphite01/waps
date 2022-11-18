@@ -54,7 +54,7 @@ class HopesController < ApplicationController
   private
 
   def hope_all
-    @hopes = Hope.all
+    @hopes = Hope.includes(:user)
   end
 
   def hope_params
