@@ -7,7 +7,7 @@ Waps-38514
 ・このアプリを使用すれば管理者も従業員も、いつでもどこでも最新のシフトを確認できます。  
 
 # URL
-https://waps-38514.herokuapp.com/  
+https://waps-38514.onrender.com  
 
 # テスト用アカウント
 ・ Basic認証ID : maka3  
